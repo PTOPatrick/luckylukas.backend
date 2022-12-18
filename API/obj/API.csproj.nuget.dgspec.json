@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\patri\\source\\repos\\luckylukas\\luckylukas.frontend\\luckylukas_backend\\API\\API.csproj": {}
+    "C:\\Users\\patri\\source\\repos\\luckylukas\\luckylukas.backend\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\patri\\source\\repos\\luckylukas\\luckylukas.frontend\\luckylukas_backend\\API\\API.csproj": {
+    "C:\\Users\\patri\\source\\repos\\luckylukas\\luckylukas.backend\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\patri\\source\\repos\\luckylukas\\luckylukas.frontend\\luckylukas_backend\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\patri\\source\\repos\\luckylukas\\luckylukas.backend\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\patri\\source\\repos\\luckylukas\\luckylukas.frontend\\luckylukas_backend\\API\\API.csproj",
+        "projectPath": "C:\\Users\\patri\\source\\repos\\luckylukas\\luckylukas.backend\\API\\API.csproj",
         "packagesPath": "C:\\Users\\patri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\patri\\source\\repos\\luckylukas\\luckylukas.frontend\\luckylukas_backend\\API\\obj\\",
+        "outputPath": "C:\\Users\\patri\\source\\repos\\luckylukas\\luckylukas.backend\\API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -44,9 +44,17 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[7.0.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.2, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

@@ -1,9 +1,6 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using API.DTOs;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 
 namespace API.Controllers
 {
@@ -27,7 +24,7 @@ namespace API.Controllers
                 Changed = DateTime.UtcNow,
                 IsBanned = false
             });
-            return accounts;
+            return Ok(JsonConvert.SerializeObject(accounts));
         }
     }
 }
