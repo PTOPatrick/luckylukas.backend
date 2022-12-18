@@ -2,6 +2,56 @@
   "version": 3,
   "targets": {
     "net7.0": {
+      "Auth0.AuthenticationApi/7.17.4": {
+        "type": "package",
+        "dependencies": {
+          "Auth0.Core": "7.17.4",
+          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "6.5.0",
+          "System.IdentityModel.Tokens.Jwt": "6.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Auth0.AuthenticationApi.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Auth0.AuthenticationApi.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Auth0.Core/7.17.4": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Auth0.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Auth0.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Auth0.ManagementApi/7.17.4": {
+        "type": "package",
+        "dependencies": {
+          "Auth0.Core": "7.17.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/Auth0.ManagementApi.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Auth0.ManagementApi.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authentication.JwtBearer/7.0.1": {
         "type": "package",
         "dependencies": {
@@ -267,6 +317,54 @@
     }
   },
   "libraries": {
+    "Auth0.AuthenticationApi/7.17.4": {
+      "sha512": "D3iGxVBjnBaY8lhA5gEW73hYW80ac4UylT+98rHVpg+IiI1aR98c1irkjXuC3FWXX74LNq+Xsnkdu0/zC2cd3Q==",
+      "type": "package",
+      "path": "auth0.authenticationapi/7.17.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Auth0Icon.png",
+        "auth0.authenticationapi.7.17.4.nupkg.sha512",
+        "auth0.authenticationapi.nuspec",
+        "lib/net452/Auth0.AuthenticationApi.dll",
+        "lib/net452/Auth0.AuthenticationApi.xml",
+        "lib/netstandard2.0/Auth0.AuthenticationApi.dll",
+        "lib/netstandard2.0/Auth0.AuthenticationApi.xml"
+      ]
+    },
+    "Auth0.Core/7.17.4": {
+      "sha512": "vPtzX2YOkrTAcAXa4YOi0OtF7m40q1+mw3k44RPOnyZzzpJANgOArFRbfDsnwZSv3PvCo39suisAyOGPMaCBZA==",
+      "type": "package",
+      "path": "auth0.core/7.17.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Auth0Icon.png",
+        "auth0.core.7.17.4.nupkg.sha512",
+        "auth0.core.nuspec",
+        "lib/net452/Auth0.Core.dll",
+        "lib/net452/Auth0.Core.xml",
+        "lib/netstandard2.0/Auth0.Core.dll",
+        "lib/netstandard2.0/Auth0.Core.xml"
+      ]
+    },
+    "Auth0.ManagementApi/7.17.4": {
+      "sha512": "ArLEZoUmA43CMO59yETDGJizAw5L/fVajZPJAA/9XDrMtD55TXPUcmCv9ykN6kxXrrept8EInw6hO/xybCntrA==",
+      "type": "package",
+      "path": "auth0.managementapi/7.17.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Auth0Icon.png",
+        "auth0.managementapi.7.17.4.nupkg.sha512",
+        "auth0.managementapi.nuspec",
+        "lib/net452/Auth0.ManagementApi.dll",
+        "lib/net452/Auth0.ManagementApi.xml",
+        "lib/netstandard2.0/Auth0.ManagementApi.dll",
+        "lib/netstandard2.0/Auth0.ManagementApi.xml"
+      ]
+    },
     "Microsoft.AspNetCore.Authentication.JwtBearer/7.0.1": {
       "sha512": "2pZZ1GQExpBV8xdRoS1RbopSXBnZBN6INA4KBb8utk6BDLzqHzfF7PCVPRS9YuPx/UHVOU8SJiPjWpcxTsvghw==",
       "type": "package",
@@ -901,6 +999,8 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "Auth0.AuthenticationApi >= 7.17.4",
+      "Auth0.ManagementApi >= 7.17.4",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 7.0.1",
       "Microsoft.AspNetCore.OpenApi >= 7.0.1",
       "Newtonsoft.Json >= 13.0.2",
@@ -951,6 +1051,14 @@
       "net7.0": {
         "targetAlias": "net7.0",
         "dependencies": {
+          "Auth0.AuthenticationApi": {
+            "target": "Package",
+            "version": "[7.17.4, )"
+          },
+          "Auth0.ManagementApi": {
+            "target": "Package",
+            "version": "[7.17.4, )"
+          },
           "Microsoft.AspNetCore.Authentication.JwtBearer": {
             "target": "Package",
             "version": "[7.0.1, )"

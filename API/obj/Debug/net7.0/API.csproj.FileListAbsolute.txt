@@ -39,3 +39,6 @@ C:\Users\patri\source\repos\luckylukas\luckylukas.backend\API\obj\Debug\net7.0\A
 C:\Users\patri\source\repos\luckylukas\luckylukas.backend\API\obj\Debug\net7.0\API.genruntimeconfig.cache
 C:\Users\patri\source\repos\luckylukas\luckylukas.backend\API\obj\Debug\net7.0\ref\API.dll
 C:\Users\patri\source\repos\luckylukas\luckylukas.backend\API\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\patri\source\repos\luckylukas\luckylukas.backend\API\bin\Debug\net7.0\Auth0.AuthenticationApi.dll
+C:\Users\patri\source\repos\luckylukas\luckylukas.backend\API\bin\Debug\net7.0\Auth0.Core.dll
+C:\Users\patri\source\repos\luckylukas\luckylukas.backend\API\bin\Debug\net7.0\Auth0.ManagementApi.dll

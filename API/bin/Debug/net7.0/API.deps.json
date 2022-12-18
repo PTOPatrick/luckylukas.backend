@@ -8,6 +8,8 @@
     ".NETCoreApp,Version=v7.0": {
       "API/1.0.0": {
         "dependencies": {
+          "Auth0.AuthenticationApi": "7.17.4",
+          "Auth0.ManagementApi": "7.17.4",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "7.0.1",
           "Microsoft.AspNetCore.OpenApi": "7.0.1",
           "Newtonsoft.Json": "13.0.2",
@@ -15,6 +17,41 @@
         },
         "runtime": {
           "API.dll": {}
+        }
+      },
+      "Auth0.AuthenticationApi/7.17.4": {
+        "dependencies": {
+          "Auth0.Core": "7.17.4",
+          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "6.15.1",
+          "System.IdentityModel.Tokens.Jwt": "6.15.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Auth0.AuthenticationApi.dll": {
+            "assemblyVersion": "7.17.4.0",
+            "fileVersion": "7.17.4.0"
+          }
+        }
+      },
+      "Auth0.Core/7.17.4": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Auth0.Core.dll": {
+            "assemblyVersion": "7.17.4.0",
+            "fileVersion": "7.17.4.0"
+          }
+        }
+      },
+      "Auth0.ManagementApi/7.17.4": {
+        "dependencies": {
+          "Auth0.Core": "7.17.4"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Auth0.ManagementApi.dll": {
+            "assemblyVersion": "7.17.4.0",
+            "fileVersion": "7.17.4.0"
+          }
         }
       },
       "Microsoft.AspNetCore.Authentication.JwtBearer/7.0.1": {
@@ -171,6 +208,27 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Auth0.AuthenticationApi/7.17.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-D3iGxVBjnBaY8lhA5gEW73hYW80ac4UylT+98rHVpg+IiI1aR98c1irkjXuC3FWXX74LNq+Xsnkdu0/zC2cd3Q==",
+      "path": "auth0.authenticationapi/7.17.4",
+      "hashPath": "auth0.authenticationapi.7.17.4.nupkg.sha512"
+    },
+    "Auth0.Core/7.17.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vPtzX2YOkrTAcAXa4YOi0OtF7m40q1+mw3k44RPOnyZzzpJANgOArFRbfDsnwZSv3PvCo39suisAyOGPMaCBZA==",
+      "path": "auth0.core/7.17.4",
+      "hashPath": "auth0.core.7.17.4.nupkg.sha512"
+    },
+    "Auth0.ManagementApi/7.17.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ArLEZoUmA43CMO59yETDGJizAw5L/fVajZPJAA/9XDrMtD55TXPUcmCv9ykN6kxXrrept8EInw6hO/xybCntrA==",
+      "path": "auth0.managementapi/7.17.4",
+      "hashPath": "auth0.managementapi.7.17.4.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Authentication.JwtBearer/7.0.1": {
       "type": "package",

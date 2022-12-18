@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "DZgGs2WX2ArR1vH2Q5xKmcbvrfqeRTLTowq8WRT6uh5daOemfOyFbkuJs+4mmaMciUALwm2wC74oY+pN2IWMmw==",
+  "dgSpecHash": "I5LRBJPx7S7yrdejycYm6MEXWOGz5iawtardgV+PSHLBFSz3SSGKMNCGkDXLcgLjgPzAzfTIMORUeyNWApkTHg==",
   "success": true,
   "projectFilePath": "C:\\Users\\patri\\source\\repos\\luckylukas\\luckylukas.backend\\API\\API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\patri\\.nuget\\packages\\auth0.authenticationapi\\7.17.4\\auth0.authenticationapi.7.17.4.nupkg.sha512",
+    "C:\\Users\\patri\\.nuget\\packages\\auth0.core\\7.17.4\\auth0.core.7.17.4.nupkg.sha512",
+    "C:\\Users\\patri\\.nuget\\packages\\auth0.managementapi\\7.17.4\\auth0.managementapi.7.17.4.nupkg.sha512",
     "C:\\Users\\patri\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\7.0.1\\microsoft.aspnetcore.authentication.jwtbearer.7.0.1.nupkg.sha512",
     "C:\\Users\\patri\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.1\\microsoft.aspnetcore.openapi.7.0.1.nupkg.sha512",
     "C:\\Users\\patri\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
