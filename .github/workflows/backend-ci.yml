@@ -19,10 +19,10 @@ jobs:
           dotnet-version: '7.0.x'
 
       - name: Restore
-        run: dotnet restore ./luckylukas_backend.sln
+        run: dotnet restore
 
       - name: Build
-        run: dotnet build ./luckylukas_backend.sln --configuration Release --no-restore
+        run: dotnet build --configuration Release --no-restore
       
       - name: Publish
-        run: dotnet publish ./luckylukas_backend.sln --configuration Release --no-build
+        run: dotnet publish --configuration Release --no-build
