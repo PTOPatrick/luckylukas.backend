@@ -23,9 +23,7 @@ jobs:
           include-prerelease: true
 
       - name: Build with dotnet
-        run: | 
-          echo ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A4153B5FC3A0408D95DEDEF8DB987557 }}
-          dotnet build --configuration Release
+        run: dotnet build --configuration Release
 
       - name: dotnet publish
         run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/API.csproj
