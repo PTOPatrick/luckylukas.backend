@@ -1,9 +1,13 @@
+using API.Data;
+using API.Extensions;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllers();
+builder.Services.AddApplicationServices(builder.Configuration);
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -13,6 +17,10 @@ builder.Services.AddAuthentication( options => {
 }).AddJwtBearer( options => {
     options.Authority = builder.Configuration.GetValue<string>("ConnectionStrings:AUTH0_AUTHORITY");
     options.Audience = builder.Configuration.GetValue<string>("ConnectionStrings:AUTH0_AUDIENCE");
+});
+
+builder.Services.AddDbContext<DataContext>(opt => {
+    opt.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 
 var app = builder.Build();
